@@ -492,7 +492,8 @@ button {
   background-color: rgba(46, 47, 66, 0.4);
   opacity: 0;
   visibility: hidden;
-  transition:  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -526,26 +527,28 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   margin-bottom: 24px;
+  fill: #2e2f42;
   background-color: #e7e9fc;
   width: 24px;
   height: 24px;
+  cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1); }
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   background-color: #404bbf;
-  border-color: transparent;
   border: none;
+  fill: #ffffff;
 }
 .modal-close-btn-icon {
   fill: #2e2f42;
   stroke-width: 1px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-close-btn-icon:hover,
-.modal-close-btn-icon:focus {
-  fill: #ffffff
+.modal-close-btn:hover > .modal-close-btn-icon,
+.modal-close-btn:focus > .modal-close-btn-icon {
+  fill: #ffffff;
 }
 
 .review-form-description {
@@ -630,7 +633,7 @@ button {
 }
 
 .review-form-message:focus {
-  border-color: #4D5AE5;
+  border-color: #4d5ae5;
 }
 .comment {
   margin-bottom: 16px;
@@ -658,14 +661,16 @@ button {
   cursor: pointer;
   fill: transparent;
   margin-right: 12px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-privacy-checkbox:checked
   + .review-form-checkbox-label
   .review-form-own-checkbox {
   background-color: #404bbf;
-  fill: #F4F4FD;
+  fill: #f4f4fd;
   border: none;
 }
 
